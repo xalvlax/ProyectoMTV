@@ -22,3 +22,22 @@ def lista_curso(self):
 
     return HttpResponse(documento)
 
+def inicio (self):
+
+    return render(self, 'inicio.html')
+
+def cursos (self):
+
+    return render(self, 'cursos.html')
+
+def profesores (self):
+
+    return render(self, 'profesores.html')
+
+def estudiantes (self):
+
+    return render(self, 'estudiantes.html')
+
+def entregables (self):
+
+    return render(self, 'entregables.html')
