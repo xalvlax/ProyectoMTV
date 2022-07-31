@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudiantes</title>
-</head>
-<body style="background-color: green;">
+{% extends 'padre.html' %}
 
-    <h1>Vista de ESTUDIANTES</h1>
+{% load static %}
 
-</body>
-</html>
+
+{% block BloqueQueCambia %}
+    <div>
+        <center>
+            <h3 style="background-color: green;">Vista de Estudiantes</h3>
+        
+            <p>""Seccion de la informacion que se mostrara de los Estudiantes""</p>
+        </center>
+    </div>
+{% endblock BloqueQueCambia %}
+
