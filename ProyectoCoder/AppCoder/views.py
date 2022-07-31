@@ -5,7 +5,7 @@ from AppCoder.models import Curso
 
 # Create your views here.
 
-def curso(self, nombre, camada):
+def curso(request, nombre, camada):
 
     curso = Curso(nombre=nombre, camada=camada)
     curso.save()
@@ -13,7 +13,7 @@ def curso(self, nombre, camada):
 
     return HttpResponse(documento)
 
-def lista_curso(self):
+def lista_curso(request):
 
     lista = Curso.objects.all()
     diccionario = {'lista_cursos': lista}
@@ -22,22 +22,23 @@ def lista_curso(self):
 
     return HttpResponse(documento)
 
-def inicio (self):
+def inicio (request):
 
-    return render(self, 'inicio.html')
+    return render(request, 'inicio.html')
 
-def cursos (self):
+def cursos (request):
 
-    return render(self, 'cursos.html')
+    return render(request, 'cursos.html')
 
-def profesores (self):
+def profesores (request):
 
-    return render(self, 'profesores.html')
+    return render(request, 'profesores.html')
 
-def estudiantes (self):
+def estudiantes (request):
 
-    return render(self, 'estudiantes.html')
+    return render(request, 'estudiantes.html')
 
-def entregables (self):
+def entregables (request):
 
-    return render(self, 'entregables.html')
+    return render(request, 'entregables.html')
+
